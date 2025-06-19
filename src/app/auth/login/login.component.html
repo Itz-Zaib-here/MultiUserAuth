@@ -1,0 +1,26 @@
+<div class="container-flud">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="https://i.postimg.cc/0yPBmWF7/3094352.jpg" height="100%" width="100%">
+        </div>
+        <div class="col-md-4 mt-4">
+            <h3 class="text-success text-center">Welcome Back</h3>
+            <form action="" class="mt-5">
+                <h5 class="text-primary mb-3">Login</h5>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="UserName" name="userName" [(ngModel)]="UserName">
+                    <label for="floatingInput">UserName</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password" [(ngModel)]="password">
+                    <label for="floatingPassword">Password</label>
+                  </div>
+                  
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button class="btn btn-outline-success me-md-2 mt-3" type="button" (click)="login()">Login</button>
+                  </div>
+                  <a routerLink="/signup" class="text-primary" style="text-decoration: none; cursor: pointer;">Need Account?</a>
+            </form>
+        </div>
+    </div>
+</div>

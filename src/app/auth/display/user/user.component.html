@@ -1,0 +1,43 @@
+<div class="container mt-5">
+    <div class="text-center mb-4">
+      <h2 class="text-success">Welcome, {{ UserName }} 👋</h2>
+      <p class="text-muted">You are logged in as a <strong>User</strong>.</p>
+    </div>
+  
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card shadow-sm rounded-4">
+          <div class="card-body">
+            <h5 class="card-title">Profile Info</h5>
+            <p class="card-text">View or update your profile.</p>
+            <button class="btn btn-outline-primary btn-sm">View Profile</button>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-4">
+        <div class="card shadow-sm rounded-4">
+          <div class="card-body">
+            <h5 class="card-title">Settings</h5>
+            <p class="card-text">Customize your preferences.</p>
+            <button class="btn btn-outline-secondary btn-sm">Go to Settings</button>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-4">
+        <div class="card shadow-sm rounded-4">
+          <div class="card-body">
+            <h5 class="card-title">Support</h5>
+            <p class="card-text">Need help? Contact support.</p>
+            <button class="btn btn-outline-danger btn-sm">Contact Support</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="text-end mt-4">
+      <button class="btn btn-danger" (click)="logout()">Logout</button>
+    </div>
+  </div>
+  
